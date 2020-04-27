@@ -62,7 +62,7 @@ public class ActionManager : MonoBehaviour
         mChangeOverTime = new Action("tick");
         mChangeOverTime.targetGoals.Add(new Goal("Groove", +1f));
         mChangeOverTime.targetGoals.Add(new Goal("Funk", +1f));
-        mChangeOverTime.targetGoals.Add(new Goal("Soul", -1f));
+        mChangeOverTime.targetGoals.Add(new Goal("Soul", +1f));
 
         InvokeRepeating("Tick", 0f, TICK_LENGTH);
     }
